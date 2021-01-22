@@ -23,12 +23,11 @@ public class Zadanie2 {
 
         System.out.println(nrlinii + ": " + tekst);
         nrlinii++;
-
     }
 
     public static void main(String[] args) {
 
-        String dni[] = {"Poniedzialek", "Wtorek", "Sroda", "Czwartek", "Piatek", "Sobota", "Niedziela"};
+        String[] dni = {"Poniedzialek", "Wtorek", "Sroda", "Czwartek", "Piatek", "Sobota", "Niedziela"};
 
         for (int i = 0; i < dni.length; i++) {
             wypisz(dni[i]);
