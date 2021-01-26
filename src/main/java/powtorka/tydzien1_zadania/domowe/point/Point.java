@@ -38,7 +38,6 @@ public class Point {
     public double distance(Point other) {
         double x1 = this.x;
         double y1 = this.y;
-
         double x2 = other.getX();
         double y2 = other.getY();
 

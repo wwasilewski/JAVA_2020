@@ -15,9 +15,9 @@ public class Main {
         Point point3 = new Point(2, 4);
         Point point4 = new Point(6, 8);
 
-        System.out.println("odl euk punktu 1-2: " + point1.distance(point2));
-        System.out.println("odl euk punktu 2-4: " + point2.distance(point4));
-        System.out.println("odl euk punktu 1-3: " + point1.distance(point3));
-        System.out.println("odl euk punktu 1-4: " + point1.distance(point4));
+        System.out.println("Euclidean distance points 1-2: " + point1.distance(point2));
+        System.out.println("Euclidean distance points 2-4: " + point2.distance(point4));
+        System.out.println("Euclidean distance points 1-3: " + point1.distance(point3));
+        System.out.println("Euclidean distance points 1-4: " + point1.distance(point4));
     }
 }
