@@ -5,7 +5,7 @@ ujemną lub zero) i ponownie zapytac o długośc promienia. Wykorzystaj metodę
 Parse klasy float. Oczywiście nie zapomnij o przechwyceniu ewentualnych wyjątków.
 */
 
-package powtorka.tydzien2.zadania.rozne;
+package powtorka.tydzien2.zadania.rozne.zad38;
 
 import java.util.Scanner;
 
