@@ -2,20 +2,20 @@ package powtorka.tydzien3.zadania.regex;
 
 import java.util.Scanner;
 
-public class Zad4Main {
+public class Zad5Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("pick a string to look for \"ala\"");
+        System.out.println("pick a date in a format like this: \"10.02.2018r.\"");
 
-        Zad4 zad4 = new Zad4();
+        Zad5 zad5 = new Zad5();
 
         while (true) {
             String stringToCheck = sc.nextLine();
-            if (zad4.checkStringForAla(stringToCheck)) {
-                System.out.println("string contains \"ala\"");
+            if (zad5.checkForValidDate(stringToCheck)) {
+                System.out.println("date is valid");
                 break;
             } else {
-                System.out.println("string does not contain \"ala\", pick again: ");
+                System.out.println("date invalid, pick again");
             }
         }
         sc.close();
