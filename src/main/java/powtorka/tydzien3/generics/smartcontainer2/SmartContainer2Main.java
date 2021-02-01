@@ -1,4 +1,4 @@
-package powtorka.tydzien3.zadania.generics.smartcontainer2;
+package powtorka.tydzien3.generics.smartcontainer2;
 
 public class SmartContainer2Main {
     public static void main(String[] args) {

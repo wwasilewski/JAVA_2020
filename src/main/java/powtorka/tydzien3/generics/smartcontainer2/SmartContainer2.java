@@ -1,4 +1,4 @@
-package powtorka.tydzien3.zadania.generics.smartcontainer2;
+package powtorka.tydzien3.generics.smartcontainer2;
 
 import java.util.ArrayList;
 import java.util.List;

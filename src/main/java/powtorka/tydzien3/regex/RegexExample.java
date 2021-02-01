@@ -1,4 +1,4 @@
-package powtorka.tydzien3;
+package powtorka.tydzien3.regex;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
