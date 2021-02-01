@@ -6,7 +6,7 @@ wszystkie imiona podając na końcu każdego imienia ilość znaków z których 
 składa (np. Jan (3))
 */
 
-package powtorka.tydzien3.zadania.generics;
+package powtorka.tydzien3.zadania.generics.zad12;
 
 import java.util.ArrayList;
 import java.util.List;

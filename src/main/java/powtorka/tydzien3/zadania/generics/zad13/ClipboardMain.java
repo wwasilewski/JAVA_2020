@@ -1,4 +1,4 @@
-package powtorka.tydzien3.zadania.generics;
+package powtorka.tydzien3.zadania.generics.zad13;
 
 public class ClipboardMain {
     public static void main(String[] args) {

@@ -3,7 +3,7 @@ Przygotuj generyczną klasę Clipboard przechowującą obiekt typu T. Klasa powi
 mieć metody insertIntoClipboard oraz getFromClipboard.
 */
 
-package powtorka.tydzien3.zadania.generics;
+package powtorka.tydzien3.zadania.generics.zad13;
 
 public class Clipboard<T> {
     private T element;
