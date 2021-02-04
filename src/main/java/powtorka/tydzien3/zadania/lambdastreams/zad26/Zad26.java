@@ -5,7 +5,7 @@ b. długości malejąco
 c. pierwszej litery imienia rosnąco - wykorzystaj metodą charAt
 */
 
-package powtorka.tydzien3.zadania.lambdastreams;
+package powtorka.tydzien3.zadania.lambdastreams.zad26;
 
 import java.util.Comparator;
 import java.util.List;

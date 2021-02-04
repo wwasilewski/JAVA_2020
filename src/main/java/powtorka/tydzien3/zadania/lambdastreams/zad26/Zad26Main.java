@@ -1,4 +1,4 @@
-package powtorka.tydzien3.zadania.lambdastreams;
+package powtorka.tydzien3.zadania.lambdastreams.zad26;
 
 public class Zad26Main {
     public static void main(String[] args) {
