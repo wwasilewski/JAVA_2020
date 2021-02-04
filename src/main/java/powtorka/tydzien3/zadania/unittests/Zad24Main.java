@@ -13,5 +13,6 @@ public class Zad24Main {
         Zad24 zad24 = new Zad24();
         float bmi = zad24.BMICalculator(Float.parseFloat(weight), Float.parseFloat(height));
         System.out.println("your bmi: " + bmi);
+        sc.close();
     }
 }
