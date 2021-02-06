@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration>
+    <Appenders>
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %com.sda.java.exercises.logger{36} - %msg%n"/>
+        </Console>
+        <File name="HtmlFile" fileName="logs/all.html" append="false">
+            <HtmlLayout>
+
+            </HtmlLayout>
+        </File>
+
+        <File name="ErrorFile" fileName="logs/error.log" append="false">
+            <PatternLayout>
+                <Pattern>%d %p %c{1.} [%t] %m%n</Pattern>
+            </PatternLayout>
+        </File>
+        <File name="InfoFile" fileName="logs/info.log" append="false">
+            <ThresholdFilter level="WARN" onMatch="DENY" onMismatch="ACCEPT"/>
+            <PatternLayout>
+                <Pattern>%d %p %c{1.} [%t] %m%n</Pattern>
+            </PatternLayout>
+        </File>
+        <File name="DebugFile" fileName="logs/debug.log" append="false">
+            <ThresholdFilter level="INFO" onMatch="DENY" onMismatch="ACCEPT"/>
+            <PatternLayout>
+                <Pattern>%d %p %c{1.} [%t] %m%n</Pattern>
+            </PatternLayout>
+        </File>
+        <File name="WarnFile" fileName="logs/warn.log" append="false">
+            <ThresholdFilter level="ERROR" onMatch="DENY" onMismatch="ACCEPT"/>
+            <PatternLayout>
+                <Pattern>%d %p %c{1.} [%t] %m%n</Pattern>
+            </PatternLayout>
+        </File>
+        <File name="TraceFile" fileName="logs/trace.log" append="false">
+            <ThresholdFilter level="DEBUG" onMatch="DENY" onMismatch="ACCEPT"/>
+            <PatternLayout>
+                <Pattern>%d %p %c{1.} [%t] %m%n</Pattern>
+            </PatternLayout>
+        </File>
+    </Appenders>
+    <Loggers>
+        <Root level="INFO">
+            <AppenderRef ref="Console"/>
+            <AppenderRef ref="HtmlFile"/>
+            <AppenderRef level="ERROR" ref="ErrorFile"/>
+            <AppenderRef level="WARN" ref="WarnFile"/>
+            <AppenderRef level="INFO" ref="InfoFile"/>
+            <AppenderRef level="DEBUG" ref="DebugFile"/>
+            <AppenderRef level="TRACE" ref="TraceFile"/>
+        </Root>
+    </Loggers>
+</Configuration>
