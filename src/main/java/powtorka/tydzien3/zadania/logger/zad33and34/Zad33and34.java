@@ -8,14 +8,14 @@ d. Dodaj logi w trybie INFO informujące u uruchomieniu i zamknięciu aplikacji.
 e. Ustaw poziom logowania na info i sprawdź czy logi pojawiły się w konsoli.
 */
 
-package powtorka.tydzien3.zadania.logger.zad33;
+package powtorka.tydzien3.zadania.logger.zad33and34;
 
 import lombok.extern.slf4j.Slf4j;
 
 import java.util.Scanner;
 
 @Slf4j
-public class Zad33 {
+public class Zad33and34 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         log.info("start logging");

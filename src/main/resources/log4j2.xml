@@ -2,7 +2,7 @@
 <Configuration>
     <Appenders>
         <Console name="Console" target="SYSTEM_OUT">
-            <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %com.sda.java.exercises.logger{36} - %msg%n"/>
+            <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %c - %msg%n"/>
         </Console>
         <File name="HtmlFile" fileName="logs/all.html" append="false">
             <HtmlLayout>
@@ -41,7 +41,7 @@
         </File>
     </Appenders>
     <Loggers>
-        <Root level="INFO">
+        <Root level="ALL">
             <AppenderRef ref="Console"/>
             <AppenderRef ref="HtmlFile"/>
             <AppenderRef level="ERROR" ref="ErrorFile"/>

@@ -2,6 +2,7 @@ package powtorka.tydzien3.zadania.unittests;
 
 import org.junit.Assert;
 import org.junit.Test;
+import powtorka.tydzien3.zadania.unittests.zad21.Zad21;
 
 import static org.hamcrest.core.Is.is;
 
