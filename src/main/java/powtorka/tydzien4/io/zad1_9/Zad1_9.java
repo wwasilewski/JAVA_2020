@@ -16,7 +16,7 @@ import java.nio.file.Paths;
 public class Zad1_9 {
     public static void main(String[] args) {
         String fromPath = Utils.displayTextAndGetValue("provide file's path location: ", true);
-        String toPath = Utils.displayTextAndGetValue("provide destination path: ", true);
+        String toPath = Utils.displayTextAndGetValue("provide destination's path: ", true);
         copyFileFromSourceToDestination(fromPath, toPath);
     }
 
