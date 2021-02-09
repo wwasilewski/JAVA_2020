@@ -4,7 +4,7 @@ wczytuje i wyświetla na konsoli jego zawartość. W celu realizacji zadania wyk
 metodę readAllLines klasy Files.
 */
 
-package powtorka.tydzien4.zad1_4;
+package powtorka.tydzien4.io.zad1_4;
 
 import java.io.IOException;
 import java.nio.file.Files;
@@ -17,11 +17,11 @@ public class Zad1_4 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("provide a path to file: ");
-        readAllLinesFromFile(sc.nextLine());
+        readAndPrintAllLinesFromFile(sc.nextLine());
         sc.close();
     }
 
-    public static void readAllLinesFromFile(String path) {
+    public static void readAndPrintAllLinesFromFile(String path) {
         Path file = Paths.get(path);
         try {
             List<String> lines = Files.readAllLines(file);
