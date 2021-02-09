@@ -1,4 +1,4 @@
-//Class with some useful methods to not duplicate the code
+//Class with some useful methods to avoid code duplication
 
 package powtorka;
 
@@ -41,7 +41,6 @@ public class Utils {
     public static String displayTextAndGetValue(String text, Boolean newLine) {
         Scanner sc = new Scanner(System.in);
         displayTextOnConsole(text, newLine);
-        sc.close();
         return sc.nextLine();
     }
 }
