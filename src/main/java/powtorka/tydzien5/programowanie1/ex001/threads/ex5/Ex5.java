@@ -1,5 +1,6 @@
 package powtorka.tydzien5.programowanie1.ex001.threads.ex5;
 
+import java.io.IOException;
 import java.util.Random;
 
 public class Ex5 implements Runnable {
@@ -7,11 +8,18 @@ public class Ex5 implements Runnable {
 
     @Override
     public void run() {
+        new DataLists();
         Person person = new Person();
         person.setFirstname(drawFirstnameFromList());
         person.setLastname(drawLastnameFromList());
         person.setAge(drawAgeOfPerson());
         String fileName = drawFileName();
+        SavePersonDataInFile savePDataInFile = new SavePersonDataInFile(person, fileName);
+        try {
+            savePDataInFile.saveFileInDirectory();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     public String drawFirstnameFromList() {
