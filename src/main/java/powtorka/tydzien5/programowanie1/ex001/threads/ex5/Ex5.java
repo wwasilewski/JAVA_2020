@@ -2,6 +2,7 @@ package powtorka.tydzien5.programowanie1.ex001.threads.ex5;
 
 import java.io.IOException;
 import java.util.Random;
+import java.util.UUID;
 
 public class Ex5 implements Runnable {
     private static final Random RANDOM = new Random();
@@ -12,8 +13,9 @@ public class Ex5 implements Runnable {
         Person person = new Person();
         person.setFirstname(drawFirstnameFromList());
         person.setLastname(drawLastnameFromList());
-        person.setAge(drawAgeOfPerson());
-        String fileName = drawFileName();
+        person.setAge(generatePersonAge());
+        String fileName = generateFileName();
+        Ex5Main.listOfFiles.add(fileName);
         SavePersonDataInFile savePDataInFile = new SavePersonDataInFile(person, fileName);
         try {
             savePDataInFile.saveFileInDirectory();
@@ -36,12 +38,12 @@ public class Ex5 implements Runnable {
         return lastnameFromList;
     }
 
-    public int drawAgeOfPerson() {
+    public int generatePersonAge() {
         return RANDOM.nextInt(100) + 1;
     }
 
-    public String drawFileName() {
-        String randomFileName = "fileWithRandomNumber";
-        return (randomFileName + RANDOM.nextInt(100));
+    public String generateFileName() {
+        String randomFileName = "person";
+        return (randomFileName + RANDOM.nextInt(100) + "-" + UUID.randomUUID());
     }
 }
