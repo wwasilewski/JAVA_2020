@@ -1,5 +1,7 @@
 package powtorka.tydzien5.programowanie1.ex001.threads.ex5;
 
+import org.json.JSONObject;
+
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -16,7 +18,8 @@ public class SavePersonDataInFile {
 
     public void saveFileInDirectory() throws IOException {
         BufferedWriter bw = new BufferedWriter(new FileWriter(nameOfFile));
-        bw.write(person.toString());
+        JSONObject jo = new JSONObject(person);
+        bw.write(jo.toString());
         bw.close();
     }
 }
