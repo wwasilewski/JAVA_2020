@@ -9,7 +9,6 @@ public class Ex5 implements Runnable {
 
     @Override
     public void run() {
-        new DataLists();
         Person person = new Person();
         person.setFirstname(drawFirstnameFromList());
         person.setLastname(drawLastnameFromList());
@@ -24,25 +23,25 @@ public class Ex5 implements Runnable {
         }
     }
 
-    public String drawFirstnameFromList() {
+    public synchronized String drawFirstnameFromList() {
         String firstnameFromList;
         int positionFromList = RANDOM.nextInt(9);
         firstnameFromList = DataLists.firstnames.get(positionFromList);
         return firstnameFromList;
     }
 
-    public String drawLastnameFromList() {
+    public synchronized String drawLastnameFromList() {
         String lastnameFromList;
         int positionFromList = RANDOM.nextInt(9);
         lastnameFromList = DataLists.lastnames.get(positionFromList);
         return lastnameFromList;
     }
 
-    public int generatePersonAge() {
+    public synchronized int generatePersonAge() {
         return RANDOM.nextInt(100) + 1;
     }
 
-    public String generateFileName() {
+    public synchronized String generateFileName() {
         String randomFileName = "person";
         return (randomFileName + RANDOM.nextInt(100) + "-" + UUID.randomUUID());
     }
