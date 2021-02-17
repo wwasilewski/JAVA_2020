@@ -9,23 +9,34 @@ package powtorka.tydzien5.programowanie1.ex002.ex7;
 public class Ex7 {
     public static void main(String[] args) {
         int[] myArray = {1, 2, 2, 2, 4, 2};
-        System.out.println(checkSumOfOddAndEvenPositionInArray(myArray));
+        printBiggerSum(myArray);
     }
 
-    public static String checkSumOfOddAndEvenPositionInArray(int[] array) {
-        int sumOfOddNumbers = 0;
+    public static int sumOfEvenPositionInArray(int[] array) {
         int sumOfEvenNumbers = 0;
         for (int i = 0; i < array.length; i++) {
             if (i % 2 == 0) {
                 sumOfEvenNumbers += array[i];
-            } else {
-                sumOfOddNumbers += array[i];
             }
         }
-        if (sumOfOddNumbers > sumOfEvenNumbers) {
-            return "sumOfNumbersAtOddPosition is greater";
-        } else if (sumOfEvenNumbers > sumOfOddNumbers) {
+        return sumOfEvenNumbers;
+    }
+
+    public static int sumOfOddPositionInArray(int[] array) {
+        int sumOfOddNumbers = 0;
+        for (int i = 0; i < array.length; i++) {
+            if (i % 2 != 0) {
+                sumOfOddNumbers = sumOfOddNumbers + array[i];
+            }
+        }
+        return sumOfOddNumbers;
+    }
+
+    public static String printBiggerSum(int[] array) {
+        if (sumOfEvenPositionInArray(array) > sumOfOddPositionInArray(array)) {
             return "sumOfNumbersAtEvenPosition is greater";
+        } else if (sumOfEvenPositionInArray(array) < sumOfOddPositionInArray(array)) {
+            return "sumOfNumbersAtOddPosition is greater";
         } else {
             return "sumOfNumbers is even";
         }
