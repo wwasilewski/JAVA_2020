@@ -10,7 +10,6 @@ public class Ex3 {
     public static void main(String[] args) {
         String str = "abcdefghij";
         System.out.println(upperCase(str, 2));
-
     }
 
     public static String upperCase(String str, int index) {
