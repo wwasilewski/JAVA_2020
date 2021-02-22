@@ -18,7 +18,7 @@ public class Ex1 {
         for (char character : str.toCharArray()) {
             if (character != ' ') {
                 int originalAlphabetPos = character - 'a';
-                int newAlphabetPos = (originalAlphabetPos + 2) % 26;
+                int newAlphabetPos = (originalAlphabetPos + 3) % 26;
                 char newCharacter = (char) ('a' + newAlphabetPos);
                 sb.append(newCharacter);
             } else {
