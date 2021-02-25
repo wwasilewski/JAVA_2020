@@ -53,13 +53,14 @@ public class Hawaiian implements Pizza, Ingredients {
 
     @Override
     public void preparePizza() {
+        System.out.println("Hawaiian");
         System.out.println("prepare pizza dough:");
         dough.preparePizzaDough();
         System.out.println("add ingredients:");
         for (String i : listOfIngredients) {
             System.out.print(i + " ");
         }
-        System.out.println("bake the pizza");
+        System.out.println("\nbake the pizza");
     }
 
     @Override

@@ -34,7 +34,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Margherita implements Pizza, Ingredients {
-    private List<String> listOfIngredients;
+    public List<String> listOfIngredients;
     private PizzaDough dough;
 
     public Margherita(PizzaDough dough) {
@@ -51,13 +51,14 @@ public class Margherita implements Pizza, Ingredients {
 
     @Override
     public void preparePizza() {
+        System.out.println("Margherita");
         System.out.println("prepare pizza dough:");
         dough.preparePizzaDough();
         System.out.println("add ingredients:");
         for (String i : listOfIngredients) {
             System.out.print(i + " ");
         }
-        System.out.println("bake the pizza");
+        System.out.println("\nbake the pizza");
     }
 
     @Override
