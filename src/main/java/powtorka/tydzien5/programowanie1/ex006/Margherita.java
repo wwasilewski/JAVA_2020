@@ -1,18 +1,23 @@
 package powtorka.tydzien5.programowanie1.ex006;
 
+import powtorka.tydzien5.programowanie1.ex006.pizzadough.PizzaDough;
+
 import java.util.ArrayList;
 import java.util.List;
 
 public class Margherita implements Pizza, Ingredients {
     private List<String> listOfIngredients;
+    private PizzaDough dough;
 
-    public Margherita() {
+    public Margherita(PizzaDough dough) {
+        this.dough = dough;
         this.listOfIngredients = new ArrayList<>();
         listOfIngredients.add("tomato sauce");
         listOfIngredients.add("cheese");
     }
 
-    public Margherita(List<String> listOfIngredients) {
+    public Margherita(List<String> listOfIngredients, PizzaDough dough) {
+        this.dough = dough;
         this.listOfIngredients = listOfIngredients;
     }
 
