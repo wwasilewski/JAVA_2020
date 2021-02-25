@@ -11,6 +11,7 @@ import powtorka.tydzien5.programowanie1.ex006.pizzadough.ChessyBites;
 import powtorka.tydzien5.programowanie1.ex006.pizzadough.GlutenFree;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class Main {
@@ -19,6 +20,7 @@ public class Main {
         pizzas.add(new Margherita(new GlutenFree()));
         pizzas.add(new Hawaiian(new AllAmericanThin()));
         pizzas.add(new Veggie(new ChessyBites()));
+        pizzas.add(new Margherita(Arrays.asList("cheese", "garlic", "onion"), new ChessyBites()));
 
         for (Pizza p : pizzas) {
             p.preparePizza();

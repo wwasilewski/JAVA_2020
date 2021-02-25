@@ -34,7 +34,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Margherita implements Pizza, Ingredients {
-    public List<String> listOfIngredients;
+    private List<String> listOfIngredients;
     private PizzaDough dough;
 
     public Margherita(PizzaDough dough) {
