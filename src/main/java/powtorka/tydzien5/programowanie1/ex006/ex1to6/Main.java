@@ -4,11 +4,11 @@ nich przekaż inne ciasto. Następnie korzystając z pętli for wyświetl sposó
 wykonywania za pomocą metody preparePizza()
 */
 
-package powtorka.tydzien5.programowanie1.ex006;
+package powtorka.tydzien5.programowanie1.ex006.ex1to6;
 
-import powtorka.tydzien5.programowanie1.ex006.pizzadough.AllAmericanThin;
-import powtorka.tydzien5.programowanie1.ex006.pizzadough.ChessyBites;
-import powtorka.tydzien5.programowanie1.ex006.pizzadough.GlutenFree;
+import powtorka.tydzien5.programowanie1.ex006.ex1to6.pizzadough.AllAmericanThin;
+import powtorka.tydzien5.programowanie1.ex006.ex1to6.pizzadough.ChessyBites;
+import powtorka.tydzien5.programowanie1.ex006.ex1to6.pizzadough.GlutenFree;
 
 import java.util.ArrayList;
 import java.util.Arrays;

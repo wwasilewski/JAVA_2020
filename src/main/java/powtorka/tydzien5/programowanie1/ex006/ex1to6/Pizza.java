@@ -7,7 +7,7 @@ będzie przechowywana jako lista. Utwórz konstruktor bezparametrowy oraz taki,
 który umożliwia przekazanie listy składników do każdej pizzy.
 */
 
-package powtorka.tydzien5.programowanie1.ex006;
+package powtorka.tydzien5.programowanie1.ex006.ex1to6;
 
 public interface Pizza {
     void preparePizza();

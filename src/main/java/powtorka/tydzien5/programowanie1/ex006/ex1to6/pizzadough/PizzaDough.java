@@ -12,7 +12,7 @@ Zaimplementuj metodę preparePizzaDough() w każdej klasie. Niech ta metoda
 wyświetla tekst na konsoli “Przygotowywanie ciasta <nazwa_ciasta>”
 */
 
-package powtorka.tydzien5.programowanie1.ex006.pizzadough;
+package powtorka.tydzien5.programowanie1.ex006.ex1to6.pizzadough;
 
 public interface PizzaDough {
     void preparePizzaDough();

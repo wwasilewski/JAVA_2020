@@ -26,9 +26,9 @@ utworzonej zmiennej.
 metoda preparePizzaDough() obiektu przypisanego do zmiennej typu PizzaDough.
 */
 
-package powtorka.tydzien5.programowanie1.ex006;
+package powtorka.tydzien5.programowanie1.ex006.ex1to6;
 
-import powtorka.tydzien5.programowanie1.ex006.pizzadough.PizzaDough;
+import powtorka.tydzien5.programowanie1.ex006.ex1to6.pizzadough.PizzaDough;
 
 import java.util.ArrayList;
 import java.util.List;
