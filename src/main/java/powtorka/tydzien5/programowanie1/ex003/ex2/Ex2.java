@@ -10,15 +10,17 @@ package powtorka.tydzien5.programowanie1.ex003.ex2;
 public class Ex2 {
 
     public boolean findPrimeNumber(int number) {
+        boolean isPrime = true;
         if (number <= 1) {
-            return false;
+            isPrime = false;
         }
-        for (int i = 2; i < Math.sqrt(number); i++) {
+        for (int i = 2; i < number; i++) {
             if (number % i == 0) {
-                return false;
+                isPrime = false;
+                break;
             }
         }
-        return true;
+        return isPrime;
     }
 
     public void printResults(int number) {

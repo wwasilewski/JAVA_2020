@@ -43,4 +43,10 @@ public class Utils {
         displayTextOnConsole(text, newLine);
         return sc.nextLine();
     }
+
+    public static Integer displayTextAndGetInt(String text) {
+        Scanner sc = new Scanner(System.in);
+        displayTextOnConsole(text);
+        return sc.nextInt();
+    }
 }
