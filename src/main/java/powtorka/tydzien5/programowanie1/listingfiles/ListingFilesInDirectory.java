@@ -21,10 +21,26 @@ public class ListingFilesInDirectory {
                 .collect(Collectors.toSet());
     }
 
+
     //using DirectoryStream - without sub-directories
     public Set<String> listFilesUsingDirectoryStream(String dir) throws IOException {
         Set<String> filelist = new HashSet<>();
         try (DirectoryStream<Path> stream = Files.newDirectoryStream(Paths.get(dir))) {
+            for (Path path : stream) {
+                if (!Files.isDirectory(path)) {
+                    filelist.add(path.getFileName()
+                            .toString());
+                }
+            }
+        }
+        return filelist;
+    }
+
+    //using DirectoryStream with file-extension - without sub-directories
+    public Set<String> listFilesUsingDirectoryStream(String dir, String fileExtension) throws IOException {
+        Set<String> filelist = new HashSet<>();
+        String file = "*." + fileExtension;
+        try (DirectoryStream<Path> stream = Files.newDirectoryStream(Paths.get(dir), file)) {
             for (Path path : stream) {
                 if (!Files.isDirectory(path)) {
                     filelist.add(path.getFileName()
