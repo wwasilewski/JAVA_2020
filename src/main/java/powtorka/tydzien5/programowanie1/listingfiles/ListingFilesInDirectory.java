@@ -21,7 +21,6 @@ public class ListingFilesInDirectory {
                 .collect(Collectors.toSet());
     }
 
-
     //using DirectoryStream - without sub-directories
     public Set<String> listFilesUsingDirectoryStream(String dir) throws IOException {
         Set<String> filelist = new HashSet<>();
