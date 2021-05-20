@@ -20,7 +20,7 @@ public class Main {
         points.add(new Point(11, 2));
 
         points.stream()
-                .sorted(Comparator.comparing(p1 -> p1.getX()))
-                .forEach(p -> System.out.println(p));
+                .sorted(Comparator.comparing(Point::getX))
+                .forEach(System.out::println);
     }
 }

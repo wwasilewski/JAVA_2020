@@ -14,6 +14,6 @@ public class Ex1 {
         List<String> names = Arrays.asList("Tom", "Jerry", "Kate", "Mary", "Rob");
 
         names.stream()
-                .forEach(name -> System.out.println(name));
+                .forEach(System.out::println);
     }
 }
