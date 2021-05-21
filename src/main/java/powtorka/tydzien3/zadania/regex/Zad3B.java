@@ -1,3 +1,10 @@
+/*
+Przygotuj aplikację pobierającą od użytkownika dowolny ciąg znaków i sprawdzającą
+czy wprowadzona wartość jest poprawnym loginem użytkownika. Za poprawny login
+uważamy tekst zawierający małe i duże litery oraz cyfry. Jego minimalna długość to 8
+a maksymalna 16 znaków.
+*/
+
 package powtorka.tydzien3.zadania.regex;
 
 import java.util.regex.Pattern;

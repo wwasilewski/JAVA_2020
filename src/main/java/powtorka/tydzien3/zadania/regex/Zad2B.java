@@ -1,3 +1,8 @@
+/*
+Przygotuj aplikację pobierającą od użytkownika ciąg znaków i sprawdzającą czy
+podany tekst jest poprawnym polskim kodem pocztowym (np. 85-155, 00-122)
+*/
+
 package powtorka.tydzien3.zadania.regex;
 
 import java.util.regex.Pattern;
