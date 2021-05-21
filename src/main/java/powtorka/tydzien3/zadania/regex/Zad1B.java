@@ -10,7 +10,7 @@ package powtorka.tydzien3.zadania.regex;
 
 import java.util.regex.Pattern;
 
-public class Zad1B implements Zad1BValidator {
+public class Zad1B implements GeneralValidator {
 
     private final Pattern PATTERN = Pattern.compile("^\\d+$");
 

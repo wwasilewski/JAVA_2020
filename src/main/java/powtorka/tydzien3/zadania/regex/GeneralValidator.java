@@ -1,6 +1,6 @@
 package powtorka.tydzien3.zadania.regex;
 
-public interface Zad1BValidator {
+public interface GeneralValidator {
 
     Boolean isValid(String string);
 }
